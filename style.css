@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,11 +9,6 @@ body {
     background-color: black;
     background-image: linear-gradient(rgb(118, 114, 114), grey, white);
     height: 100vh;
-    font-family: Krona One;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 56px;
-    letter-spacing: 0%;
     box-sizing: border-box;
 }
 
@@ -21,51 +18,49 @@ body {
     display: flex;
     flex-wrap: wrap;
     /* Permite que los divs se acomoden en filas */
-    gap: 20px;
-    justify-content: center;
+    gap: 30px;
     max-width: 1200px;
-    margin: auto;
+    margin: 8%;
+    justify-content: space-between;
 }
 
 .column {
     flex: 1 1 calc(50% - 20px);
-    /* Dos columnas con espacio */
-    background-color: white;
+    /* Dos columnas con espacio 
+    background-color: white;*/
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1,
-h2,
+h2 {
+    font-family: "Krona One", serif;
+    color: black;
+}
+
+
 h3,
 h4 {
-    color: #333;
+    font-family: "Montserrat", serif;
+    color: black;
 }
 
 /* Ajuste de imagen */
 .img_ajuste {
-    display: block;
-    max-width: 150px;
+    max-width: 450px;
     /* Tamaño fijo */
-    height: 150px;
+    height: 350px;
     border-radius: 50%;
     /* Hace que la imagen sea circular */
     object-fit: cover;
     /* Ajusta la imagen dentro del círculo */
     margin: 20px auto;
     /* Centra la imagen */
+
 }
 
 /* Estilos de lista */
 ul {
     padding-left: 20px;
-}
-
-.img_ajuste {
-    width: 300px;
-    /* Ajusta el ancho */
-    height: auto;
-    /* Mantiene la proporción original */
-    clip-path: circle(50%);
 }

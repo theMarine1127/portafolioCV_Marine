@@ -7,27 +7,67 @@
 
 body {
     background-color: black;
-    background-image: linear-gradient(rgb(118, 114, 114), grey, white);
     height: 100vh;
     box-sizing: border-box;
+    margin: 0;
 }
-
-
 
 .container {
     display: flex;
     flex-flow: row wrap;
-    /* Permite que los divs se acomoden en filas */
-    gap: 2%;
     margin: 5%;
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: space-evenly;
     height: fit-content;
+    align-items: stretch;
+    box-shadow: 5px 5px 20px rgba(47, 9, 104, 0.9);
+    background-image: linear-gradient(rgb(118, 114, 114), grey, white);
+    padding: 20px;
 }
 
 
+/*class container encabezado*/
 
-.column,
-.column1,
+.container-head {
+    display: flex;
+    /* Pone los div en fila */
+    justify-content: space-between;
+    /* Distribuye uniformemente */
+    gap: 10px;
+    /* Espacio entre divs */
+    height: 350px;
+    margin-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column1 {
+    width: 80%;
+    height: 60%;
+    padding: 3%;
+    margin: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.column {
+
+    width: 30%;
+    height: 75%;
+    padding: 3%;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.container-main {
+    display: flex;
+    /* Pone los div en fila */
+    justify-content: space-around;
+    /* Distribuye uniformemente */
+    gap: 10px;
+    /* Espacio entre divs */
+}
+
 .column2,
 .column3,
 .column5,
@@ -36,12 +76,8 @@ body {
     padding: 3%;
     margin: 1px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-}
-
-.column4 {
-    padding: 20px;
-    border-radius: 10px;
 }
 
 /* Nuevo contenedor flex para los div internos */
@@ -68,6 +104,12 @@ body {
     text-align: start;
 }
 
+.column4 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
 
 
 
@@ -88,8 +130,8 @@ h4 {
 /* Ajuste de imagen */
 .img_ajuste {
     max-width: 250px;
-    width: 90%;
-    border-radius: 50%;
+    width: 100%;
+    border-radius: 90%;
     /* Hace que la imagen sea circular */
     object-fit: cover;
     /* Ajusta la imagen dentro del círculo */
